@@ -1,0 +1,16 @@
+<launch>
+
+  <node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
+    <param name="ip_address" value="172.16.0.10"/>
+    <!-- for USB type -->
+    <!--param name="serial_port" value="/dev/ttyACM_URG"/ -->
+    <param name="frame_id" value="laser"/>
+    <param name="publish_intensity" value="true"/>
+    <param name="publish_multiecho" value="false"/>
+    <remap from="scan" to="scan"/>
+  </node>
+  
+  <node name="urg_reflector" pkg="urg_reflector" type="urg_reflector" output="screen">
+  </node>
+
+</launch>
