@@ -10,7 +10,7 @@
     <remap from="scan" to="scan"/>
   </node>
   
-  <node name="urg_reflector" pkg="urg_reflector" type="urg_reflector" output="screen">
+  <node name="urg_test" pkg="urg_test" type="urg_test" output="screen">
   </node>
 
 </launch>
